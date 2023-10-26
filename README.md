@@ -3,19 +3,29 @@
 * Página o páginas con resultados deportivos ya terminados.
 * Página o páginas con el calendario de eventos futuros.
 * Seguimiento de eventos deportivos en vivo.
-* Posibilidad de registrarse para (ejemplos):dar likes (y/o dislikes) añadir comentarios participar en encuestascualquier otra funcionalidad
+* Posibilidad de registrarse para (ejemplos):
+  * dar likes (y/o dislikes)
+    * añadir comentarios
+    * participar en encuestas
+    * cualquier otra funcionalidad
 * Página o páginas de gestión, para:
-## Crear eventos en vivo
-* Introducir resultados deportivos
-* Editar (corregir) resultados etc
-* La web tiene que estar publicada en internet bajo una URL. De esta web se realizará un seguimiento de las visitas:
+  *  Crear eventos en vivo
+  * Introducir resultados deportivos
+  * Editar (corregir) resultados etc
+## La web tiene que estar publicada en internet bajo una URL. De esta web se realizará un seguimiento de las visitas:
 * Cantidad de visitas en total por período
 * Seguimiento de páginas internas más visitadas
 * Términos de búsqueda (keywords) que se han conseguido posicionar en Google u otros buscadores.
-* La accesibilidad y usabilidad de la interfaz deben ser considerados, con el objetivo de maximizar las visitas para incrementar la capacidad de indexación de los buscadores como siendo inclusivo para gente con alguna discapacidad.
+ La accesibilidad y usabilidad de la interfaz deben ser considerados, con el objetivo de maximizar las visitas para incrementar la capacidad de indexación de los buscadores como siendo inclusivo para gente con alguna discapacidad.
 ## En la parte servidor:
-* Se guardarán los resultados en una base de datos
+* La aplicación se desarrollará en Python, siguiendo el patrón Modelo-Vista-Controlador (MVC).
+* No se utilizará ningún framework para el desarrollo.
+* Se utilizará el motor de plantillas Jinja2 para incrustar los datos dinámicos en la/s página/s HTML.
+* Se guardarán los resultados en una base de datos PostgreSQL
+* Se trabajará con el ORM (Object Relational Mapping )  SQLAlchemy.
 * Se dispondrá de un proceso que recibe peticiones y las devuelve en formato JSON.
+* Se valorará positivamente el consumo de alguna API para recoger información desde Python, así como la utilización de un botón de refresco o similar, para actualizar la información.
+
 ## En la parte cliente:
 * Encargada de presentar la información
 * Solicita datos a servidor y procesa el JSON recibido.
