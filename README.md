@@ -98,7 +98,7 @@ Get template -> `page = env.get_template('page_example.html')`
 
 #### Función ejemplo para renderizar
 
-```python
+'''python
 def page_example(environ, start_response):
     # Get data from models
     publicaciones = get_posts()
@@ -108,21 +108,21 @@ def page_example(environ, start_response):
     response_headers = [('Content-type', 'text/html')]
     start_response(status, response_headers)
     return [response]
-```
+'''
 ### MODELS.PY
-  ## 
+Todas las funciones creadas consumen la API con GET para consumir los datos en JSON, PUT para insertaciones o actualizaciones, y DELETE. 
 ### CONTROLLER.PY
+En el controller se llama a las funciones creadas en views y se configurán las rutas del navegador.
 ### UTILITIES.PY
+Funciones costumizadas para enviar email, definir nuevas contraseñas...
 
-#### Set_new_password
-#### FLASH_MANAGER.PY
-This flash_manager have functions to show messages on html
+### FLASH_MANAGER.PY
+Clase y metodos de add y get para mostrar mensajes popup en py.
 
 ## Api creada en ApiFast
+Empty
 
 ## En versiones futuras
-
-
 ### VALIDAR CON REGEX
 La mayoría de formularios tienen una validación sencilla creada por el HTML, en versiones futuras se validarán todas con Regex como, por ejemplo, un nivel mínimo de seguridad para las contraseñas.
 ### CRUD PARA UN USUARIO MISMO
