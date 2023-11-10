@@ -53,48 +53,14 @@ La [Base de datos](https://github.com/Resultados-deportivos/Documentacion/blob/m
 
 ## Web creada en wsgiref
 
-## Api creada en ApiFast
 
-## En versiones futuras
-
-### VIEWS.PY
-Variabels globales
-user_info -> A traves de de las cookies se guardaran en este diccionario </br>
-Get template -> page = env.get_template('page_example.html')
-#### Funncion ejemplo para renderizar
-'''
-def page_example(environ, start_response):
-    # Get data from models
-    publicaciones = get_posts()
-    # This response the html with the data and render own css
-    response = index.render(publicaciones=publicacionescss_name='inicio.css').encode('utf-8')
-    status = '200 OK'
-    response_headers = [('Content-type', 'text/html')]
-    start_response(status, response_headers)
-    return [response]
-'''
-### MODELS.PY
-  ## 
-### CONTROLLER.PY
-### UTILITIES.PY
- ## Funcitons that we need
-  ### Set_new_password
-# FLASH_MANAGER.PY
- This flash_manager have functions to show messages on html
-
-# Versiones futuras
-## VALIDAR CON REGEX
-### CRUD PARA UN USUARIO MISMO
-### PROTECCION PATH
-
-
-## Métodos de Inserción
+### Métodos de Inserción
 Se han proporcionado métodos para insertar datos en cada una de las tablas mencionadas anteriormente. Estos métodos facilitan la incorporación de nueva información al sistema.
 
 CRUD de la Aplicación
 Se ha implementado un conjunto de operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para cada entidad del sistema. Estas operaciones permiten gestionar eficientemente la información almacenada en la base de datos.
 
-## Operaciones CRUD
+### Operaciones CRUD
 1. Crear (Create)
  - insert_publicacation_data(data): Crea una nueva publicación con los datos proporcionados.
  - insert_event_data(data): Crea un nuevo evento con los datos proporcionados.
@@ -117,3 +83,42 @@ Se ha implementado un conjunto de operaciones CRUD (Crear, Leer, Actualizar, Eli
  - get_all_likes(): Obtiene todos los likes almacenados.
  - get_all_registros(): Obtiene todos los registros almacenados.
  - get_all_comentarios(): Obtiene todos los comentarios almacenados.
+
+### VIEWS.PY
+Variabels globales
+user_info -> A traves de de las cookies se guardaran en este diccionario </br>
+Get template -> page = env.get_template('page_example.html')
+#### Funncion ejemplo para renderizar
+'''
+def page_example(environ, start_response):
+    # Get data from models
+    publicaciones = get_posts()
+    # This response the html with the data and render own css
+    response = index.render(publicaciones=publicacionescss_name='inicio.css').encode('utf-8')
+    status = '200 OK'
+    response_headers = [('Content-type', 'text/html')]
+    start_response(status, response_headers)
+    return [response]
+'''
+### MODELS.PY
+  ## 
+### CONTROLLER.PY
+### UTILITIES.PY
+
+#### Set_new_password
+#### FLASH_MANAGER.PY
+This flash_manager have functions to show messages on html
+
+## Api creada en ApiFast
+
+## En versiones futuras
+
+
+### VALIDAR CON REGEX
+La mayoria de formularios tienen una validacion sencilla creadas por el html, en versiones futuras se validaran todas con Regex como por ejemplo un nivel minimo de seguridad para las contreñas.
+### CRUD PARA UN USUARIO MISMO
+Cuanod el usuario inicia sesion se podra configurar su avatar a su gusto
+### PROTECCION PATH
+Ahora mismo hay vulnerabilidades en la web, en versiones futuras la mayoria de path estarán protefidas
+### Buscador especifico 
+La busqeda por un juador o equipo especifico vendra en veriones posteriores
