@@ -1,11 +1,11 @@
 # Web de Basketball *Onebasket*
 
-1. [Descripción General](#Descripción General)
+1. [Descripción General](#Descripción-General)
 2. [Rentabilidad](#Rentabilidad)
-3. [Base de datos](#Base de datos)
-4. [Web creada en wsgiref](#Web creada en wsgiref)
-5. [Api creada en ApiFast](#Api creada en ApiFast)
-6. [En versiones futuras](#En versiones futuras)
+3. [Base de datos](#Base-de-datos)
+4. [Web creada en wsgiref](#Web-creada-en-wsgiref)
+5. [Api creada en ApiFast](#Api-creada-en-ApiFast)
+6. [En versiones futuras](#En-versiones-futuras)
 
 ## Descripción General
 Este proyecto utiliza Python y WSGI para crear una aplicación web que gestiona información relacionada con deportes, incluyendo publicaciones, eventos, jugadores, usuarios, ligas, estadios, equipos, likes, registros, comentarios y puntos.
