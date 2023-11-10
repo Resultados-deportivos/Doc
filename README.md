@@ -5,7 +5,8 @@
 3. [Base de datos](#base-de-datos)
 4. [Web creada en wsgiref](#web-creada-en-wsgiref)
 5. [Api creada en ApiFast](#api-creada-en-apifast)
-6. [En versiones futuras](#en-versiones-futuras)
+6. [Configuración del servidor](#configuración-del-servidor)
+7. [En versiones futuras](#en-versiones-futuras)
 
 ## Descripción General
 Este proyecto utiliza Python y WSGI para crear una aplicación web que gestiona información relacionada con deportes, incluyendo publicaciones, eventos, jugadores, usuarios, ligas, estadios, equipos, likes, registros, comentarios y puntos.
@@ -121,6 +122,9 @@ Clase y metodos de add y get para mostrar mensajes popup en py.
 
 ## Api creada en ApiFast
 Empty
+
+## Configuración-del-servidor
+[Aquí](https://github.com/Resultados-deportivos/Documentacion/tree/main/Servidor "Servidor") en tres PDF todos los configuraciones y registros del Servior DINAHOSTING y AWS. 
 
 ## En versiones futuras
 ### VALIDAR CON REGEX
